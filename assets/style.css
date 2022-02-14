@@ -1,6 +1,6 @@
 .container {
   background-color: blanchedalmond;
-  width: xs
+  width: xs;
 }
 
 .container:hover {
@@ -10,5 +10,5 @@
 }
 
 .navbar a{
-  font-family: Verdana !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
