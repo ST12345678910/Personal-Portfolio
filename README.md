@@ -1,0 +1,2 @@
+# ResponsivePortfolio
+A mobile friendly personal portfolio created to demonstrate my progress in utilizing Bootstrap, Java logic, basic HTML, CSS styling, as well as git tools. (Try the site on both desktop and mobile!)

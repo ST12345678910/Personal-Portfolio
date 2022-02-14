@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matching Game</title>
+  <style>
+      img {
+position: absolute;
+}
+div {
+position: absolute;
+width: 500px;
+height: 500px; 
+}
+#rightSide {
+left: 500px;
+border-left: 1px solid;
+}
+  </style>
+</head>
+<body onload="generateFaces()"> 
+
+    
+  <h1>Matching Game</h1>
+  <button type="button" id="tryAgain">Try Again</button>
+
+  <p>Click the Extra Face on the Left Side!</p>
+   
+
+  <div id="leftSide"></div>
+  <div id="rightSide"></div>
+
+  <script>
+      let numberFaces = 0 
+const leftSide = document.getElementById("leftSide");
+const rightSide = document.getElementById("rightSide");
+let timesTry = 0;
+const tryAgain = document.getElementById("tryAgain");
+const beginner = document.getElementById("Beginner");
+const intermediate = document.getElementById("Intermediate");
+const expert = document.getElementById("Expert");
+const cancel = document.getElementById("CANCEL");
+function generateFaces(){
+let level = prompt("Choose Difficulty:\n\n" +  "1.Beginner\n\n" + "2.Intermediate\n\n" + "3.Expert\n\n" + "Enter 1, 2, or 3\n\n") 
+   if ( parseInt(level) === 3)
+   {
+     numberFaces = 8
+   }
+   else if (parseInt(level) ===2)
+   {
+     numberFaces = 5
+   }
+    else if (parseInt(level) === 1)
+    {
+      numberFaces = 2
+    }
+    else if (parseInt(level) !== 1 || parseInt(level) !== 2 || parseInt(level) !== 3)
+     {
+       alert ("Enter 1, 2, or 3" )
+     } 
+     else
+     { 
+      parseInt(level)
+      alert("Game canceled")
+    }
+ for( let i = 0 ; i < numberFaces ; i++) {
+  let face = document.createElement("img");
+  face.src = 'images/smileface.jpg';
+  let randomTop =  Math.floor(Math.random()*400)+1;
+  let randomLeft = Math.floor(Math.random()*400)+1;
+  face.style.top = randomTop + 'px';
+  face.style.left = randomLeft  + 'px';
+  leftSide.appendChild(face);
+}
+const leftSideImages = leftSide.cloneNode(true); 
+  leftSideImages.removeChild(leftSideImages.lastElementChild);
+  rightSide.appendChild(leftSideImages);
+  let last = leftSide.lastElementChild;
+  last.addEventListener("click",nextLevel);
+  console.log(last)
+  document.body.addEventListener("click",gameOver) 
+}
+function nextLevel(event){
+  
+   while(leftSide.firstChild){
+     leftSide.removeChild(leftSide.firstChild)
+   }
+   while(rightSide.firstChild){
+     rightSide.removeChild(rightSide.firstChild)
+   }
+   event.stopPropagation();
+   numberFaces += 5;
+   timesTry+=1
+   generateFaces();  
+}
+function gameOver(){
+    let finalcount = timesTry+=1
+        alert('Game Over! ' + ' You Have Tried ' + finalcount +' Times ') 
+document.body.removeEventListener("click",gameOver);
+        leftSide.lastElementChild.removeEventListener("click",nextLevel)
+}
+tryAgain.addEventListener("click",refresh)
+        function refresh(event){
+event.stopPropagation();
+        window.location.reload("Refresh");
+      }
+  </script>
+</body>
+</html>
