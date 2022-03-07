@@ -12,3 +12,13 @@
 .navbar a{
   font-family: Arial, Helvetica, sans-serif !important;
 }
+
+#contactColumn {
+  border: solid black 5px;
+}
+
+.btn:hover {
+  color: yellow;
+  background-color: black;
+  transform: scale(1.15);
+}
