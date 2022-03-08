@@ -1,24 +1,47 @@
 .container {
-  background-color: rgb(243, 180, 124);
+  background-color: rgba(95, 93, 93, 0.5);
+
   width: xs;
 }
 
-.container:hover {
-  -moz-box-shadow: 0 0 5px 5px grey;
-  -webkit-box-shadow: 0 0 5px 5px grey;
-  box-shadow: 0 0 5px 5px grey;
+body {
+
+  background: linear-gradient(-45deg, coral, lightblue, grey);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  height: 100vh;
 }
 
-.navbar a{
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+}
+
+
+.navbar {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
-#contactColumn {
+/* #contactColumn {
   border: solid black 5px;
-}
+} */
 
 .btn:hover {
   color: yellow;
   background-color: black;
   transform: scale(1.15);
+}
+
+#avatar {
+  border-radius: 50%;
 }
