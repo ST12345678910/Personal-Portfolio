@@ -1,7 +1,7 @@
 # ResponsivePortfolio
-Learn more about me through this responsive mobile friendly personal portfolio!
+Responsive mobile friendly portfolio created using <code>Bootstrap</code>, and deployed with <code>Github Pages</code>. Contact information, and projects are continuously updated. Try the site on mobile and desktop!
 
-### [Deployed Site](https://st12345678910.github.io/PersonalPortfolio/)
-<p align="center">
-  <img src="images/portdemo.png" />
-</p>
+## [Deployed Site](https://st12345678910.github.io/PersonalPortfolio/)
+
+
+  <img src="images/portfoliomockup.jpg" />
