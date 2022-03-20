@@ -3,6 +3,11 @@ body {
   background-color: #cccccc;
 }
 
+#mainJumbo {
+  --animate-duration: 2s;
+  --animate-delay: 0.5s;
+}
+
 #nameTitle {
   color: whitesmoke;
   font-weight: bold;
@@ -16,14 +21,34 @@ body {
 }
 
 #downArrow {
-  font-size: xxx-large;
-  color: yellow;
+  font-size: 50px;
+  color: whitesmoke;
   text-align: center;
+  display: inline-block;
+  --animate-duration: 2s;
+  border-radius: 25px;
+}
+
+#resumeText {
+  background-color: #ccccccbb;
+  border-radius: 10px;
+}
+
+#mainArrows {
+  border-radius: 10px;
+  font-size: 35px;
+  color: yellow;
 }
 
 #section02 {
   margin-top: 275px;
   margin-bottom: 275px;
+}
+
+#section03 {
+  margin-top: 275px;
+  margin-bottom: 275px;
+  background-color: #cccccc00;
 }
 
 .card-img-top {
@@ -39,9 +64,18 @@ body {
   background-color: rgb(71, 69, 69);
 }
 
+#resPic {
+  max-width: 100vh;
+}
+
 .card-text {
   color: white;
 }
+
+#backTotop {
+  background-color: #cccccc00;
+}
+
 code {
   color: white
 }
