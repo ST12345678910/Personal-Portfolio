@@ -1,4 +1,4 @@
-# Portfolio | <a href="https://st12345678910.github.io/PersonalPortfolio/"><strong>Deployed Site<strong></a>
+# Portfolio | <a href="https://st12345678910.github.io/PersonalPortfolio/" target="_blank"><strong>Deployed Site<strong></a>
 
 ## Description
  A responsive personal portfolio created with Bootstrap. My contact information, as well as some of my favorite projects can be found in the deployed application.
