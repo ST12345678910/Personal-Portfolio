@@ -1,47 +1,47 @@
-.container {
-  background-color: rgba(95, 93, 93, 0.5);
-
-  width: xs;
-}
-
 body {
-
-  background: linear-gradient(-45deg, coral, lightblue, grey);
-  background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
-  height: 100vh;
+  background-image: url("/images/coolBG.jpg");
+  background-color: #cccccc;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
+#nameTitle {
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #ccccccbb;
+  border-radius: 100px;
+  text-align: center;
 }
 
-
-.navbar {
-  font-family: Arial, Helvetica, sans-serif !important;
+#section01 {
+  margin-top: 150px;
 }
 
-/* #contactColumn {
-  border: solid black 5px;
-} */
-
-.btn:hover {
+#downArrow {
+  font-size: xxx-large;
   color: yellow;
-  background-color: black;
-  transform: scale(1.15);
+  text-align: center;
 }
 
-#avatar {
-  border-radius: 50%;
+#section02 {
+  margin-top: 275px;
+  margin-bottom: 275px;
+}
+
+.card-img-top {
+  max-width: 50%;
+}
+
+.card {
+  background-color: #ccccccbb;
+}
+
+.projectTitles {
+  color: white;
+  background-color: rgb(71, 69, 69);
+}
+
+.card-text {
+  color: white;
+}
+code {
+  color: white
 }
