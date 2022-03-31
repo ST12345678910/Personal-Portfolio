@@ -30,8 +30,10 @@ body {
 }
 
 #resumeText {
-  background-color: #ccccccbb;
-  border-radius: 10px;
+  background-color: blue;
+  border-radius: 70px;
+  padding: 10px;
+  font-size: 25px;
 }
 
 #mainArrows {
@@ -46,6 +48,12 @@ body {
 }
 
 #section03 {
+  margin-top: 275px;
+  margin-bottom: 275px;
+  background-color: #cccccc00;
+}
+
+#section04 {
   margin-top: 275px;
   margin-bottom: 275px;
   background-color: #cccccc00;
@@ -78,4 +86,12 @@ body {
 
 code {
   color: white
+}
+
+#aboutMe {
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #ccccccbb;
+  border-radius: 15px;
+  text-align: center;
 }
